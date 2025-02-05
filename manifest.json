@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "URL Safety Checker",
+  "description": "Detects malicious URLs in real-time using VirusTotal API",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "notifications",
+    "webNavigation",
+    "tabs" 
+  ],
+  "host_permissions": [
+    "https://www.virustotal.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

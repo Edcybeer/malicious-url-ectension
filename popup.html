@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XKShield Browser Defender</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="container">
+    <!-- Header Section -->
+    <div class="header-container">
+      <img src="icon.png" alt="XKShield Logo" class="logo">
+      <h1 class="title">XKShield Browser Defender</h1>
+    </div>
+
+    <!-- URL Checker Section -->
+    <div class="url-checker">
+      <h2>URL Safety Checker</h2>
+      <input type="text" id="urlInput" placeholder="Enter URL to check">
+      <button id="checkButton">Check URL</button>
+    </div>
+
+    <!-- Loader for checking the URL -->
+    <div id="loader" class="hidden"></div>
+
+    <!-- Result message -->
+    <div id="result" class="hidden"></div>
+
+    <!-- Blocking Notification -->
+    <div id="block-notification" class="hidden">
+      <p class="block-text">This website has been blocked due to detected threats.</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
