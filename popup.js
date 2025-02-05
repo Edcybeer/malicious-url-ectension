@@ -22,7 +22,7 @@ function checkPhishing(base64Url) {
     fetch(`https://www.virustotal.com/api/v3/urls/${base64Url}`, {
         method: 'GET',
         headers: {
-            'x-apikey': '4c46987ea38feca64a479371ca28fc1e58843d302406a3f7fd8a52da9ec1c720'  // Replace with your actual API key
+            'x-apikey': ''  // Replace with your actual API key
         }
     })
     .then(response => response.json())
